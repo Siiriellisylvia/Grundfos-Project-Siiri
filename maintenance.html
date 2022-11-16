@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maintenance</title>
+    <link rel="stylesheet" href="/css/news-styles.css">
+</head>
+<body>
+    <div id="blockingRectangle"></div>
+    <div id="newsWrapper"> 
+ 
+        <a href="index.html"><div class="mobile-logo"> 
+            <div class="mobile-name"> <h1 class="main-heading-grundfos">GRUNDFOS  </h1> <h1 class="main-heading-text">KOLLEGIET</h1> </div>
+            <div class="horizontal-line"></div></div></a>
+
+     <nav class="navigation">
+ 
+         <div class="logo">
+             <a href="index.html" class="navLogoLink">
+           <p class="logo-grundfos">GRUNDFOS</p>
+           <p class="logo-kollegiet">KOLLEGIET</p>
+         </a>
+         </div>
+     </nav>
+ 
+     <section class="newsContent">
+         <div class="newsTop">
+             <h1 class="newsH1"><a href="news.html" id="newsLink">NEWS</a></h1>
+             <img class="newsSearchIcon" src="images/search.svg" alt="Search icon">
+           </div>
+
+     <!--dropdown filter for mobile-->
+<div class="dropDown" id="headerBox">
+    <div id="mobileFlexDropFilter">
+    <button onclick="newsDrop()" class="dropbtn" id="dropClick">Maintenance
+        <img src="images/arrow-down.svg" alt="down arrow" id="downArrow">
+    </button>
+    <a href="news.html"><img src="/images/clearfilter_icon.svg" alt="clear filter button" id="mobileClearFilterButton"></a>
+</div>
+    <div id="myDropdown" class="dropdown-content">
+      <a href="news.html">All categories</a>
+      <a href="#">Community</a>
+      <a href="#">Laundry</a>
+      <a href="#">Outdoor Areas</a>
+      <a href="#">Holidays</a>
+    </div>
+</div>
+         
+         <!--News filter options-->
+         <div id="newsBurger">
+             <a href="newsIconFilter.html">☰</a>
+             </div>
+          <ul id="newsIconsContainer">
+                     <li class="newsIcon" id="maintenanceFilterButton" onclick="maintenanceColour()">
+             <figure class="newsFigure">
+             <img id="newsIconMaintenance" class="newsIconImage" src="/images/maintenance_icon.svg" alt="Spanner">
+             <figcaption class="newsIconLabel">Maintenance</figcaption>
+             </figure>
+           </li>
+ 
+          <li class="newsIcon" id="communityFilterButton" onclick="communityColour()"> 
+             <figure>
+             <img id="newsIconCommunity" class="newsIconImage" src="/images/community_icon.svg" alt="Group of people">
+             <figcaption class="newsIconLabel">Community</figcaption>
+         </figure>
+     </li>
+ 
+             <li class="newsIcon" id="laundryFilterButton" onclick="laundryColour()">
+                 <figure>
+             <img id="newsIconLaundry" class="newsIconImage" src="/images/laundry_icon.svg" alt="Washing machine">
+             <figcaption class="newsIconLabel">Laundry</figcaption>
+         </figure>
+     </li>
+ 
+             <li class="newsIcon" id="outdoorFilterButton" onclick="outdoorColour()">
+                 <figure>
+             <img id="newsIconOutdoor" class="newsIconImage" src="/images/outdoor_icon.svg" alt="Trees">
+              <figcaption class="newsIconLabel">Outdoor areas</figcaption>
+             </figure>
+         </li>
+ 
+          <li class="newsIcon" id="holidaysFilterButton" onclick="holidaysColour()">
+             <figure>
+            <img id="newsIconHolidays" class="newsIconImage" src="/images/holidays_icon.svg" alt="Sun">
+            <figcaption class="newsIconLabel">Holidays</figcaption>
+         </figure>
+         </li>
+ 
+         <li class="newsIcon" id="clearFilterButton">
+             <figure>
+                 <img class="newsIconImage" src="/images/clearfilter_icon.svg" alt="Funnel with a cross">
+                 <figcaption class="newsIconLabel">Clear filter</figcaption>
+             </figure>
+         </li>
+ 
+         
+          </ul>
+ 
+          <!--news articles-->
+ 
+     <section id="newsArticleContainer">
+ 
+ 
+     <article class="newsArticle maintenanceArticle">
+         <img class="newsArticleIcon" src="/images/maintenance_icon.svg" alt="Spanner">
+         <div class="newsText">
+             <div class="newsHeader">
+                 <h3 class="newsH3">All power restored</h3>
+                 <p class="newsDate">07.10.2022</p>
+             </div>
+             <p class="newsDescription"> Following a power outage last night, all power has now
+                 been restored to the building</p>
+         </div>
+     </article>
+     
+ 
+     <article class="newsArticle maintenanceArticle">
+         <img class="newsArticleIcon" src="/images/maintenance_icon.svg" alt="Spanner">
+         <div class="newsText">
+             <div class="newsHeader">
+                 <h3 class="newsH3">Water consumption</h3>
+                 <p class="newsDate">02.10.2022</p>
+             </div>
+             <p class="newsDescription"> Last month we experienced high water consumption. If
+                 you have a leak in your toilet, please contact Caretaker.</p>
+         </div>
+     </article>
+ 
+     </section> <!--end of news content section-->
+
+     <!-- mobile navigation-->
+<!-- mobile navigation-->
+<div class="navigation-mobile">
+    <a href="help.html"> <svg id="mobileNavHelp" xmlns="http://www.w3.org/2000/svg" width="32.81" height="32.111" viewBox="0 0 32.81 32.111" class="mobile-nav-icon">
+     <path id="Help_icon" data-name="Help icon" d="M19.4,3A16.25,16.25,0,0,0,3,19.055,16.25,16.25,0,0,0,19.4,35.111a16.584,16.584,0,0,0,11.82-4.933A15.771,15.771,0,0,0,35.81,19.055,16.25,16.25,0,0,0,19.4,3Zm0,2.676A13.507,13.507,0,0,1,33.075,19.055,13.507,13.507,0,0,1,19.4,32.435a13.8,13.8,0,0,1-9.673-3.912,13.215,13.215,0,0,1-4-9.467A13.507,13.507,0,0,1,19.4,5.676Zm0,5.352a5.427,5.427,0,0,0-5.468,5.352h2.734a2.735,2.735,0,0,1,5.468,0,2.392,2.392,0,0,1-1.666,2.258l-.556.166a2.71,2.71,0,0,0-1.879,2.551v1.714h2.734V21.357l.556-.169a5.1,5.1,0,0,0,3.545-4.808A5.427,5.427,0,0,0,19.4,11.028ZM18.038,24.407v2.676h2.734V24.407Z" transform="translate(-3 -3)" fill="#fff"/>
+   </svg>
+    </a>
+    <a href="burger.html"> <svg xmlns="http://www.w3.org/2000/svg" width="38.421" height="23.644" viewBox="0 0 38.421 23.644" class="mobile-nav-icon">
+     <path id="icons8-menu" d="M3.478,7a1.478,1.478,0,1,0,0,2.956H38.943a1.478,1.478,0,1,0,0-2.956Zm0,10.344a1.478,1.478,0,1,0,0,2.956H38.943a1.478,1.478,0,1,0,0-2.956Zm0,10.344a1.478,1.478,0,1,0,0,2.956H38.943a1.478,1.478,0,1,0,0-2.956Z" transform="translate(-2 -7)" fill="#fff"/>
+   </svg>
+   
+   </a>
+    <a href="search.html"> <svg id="mobileNavSearch" xmlns="http://www.w3.org/2000/svg" width="32" height="31.939" viewBox="0 0 32 31.939" class="mobile-nav-icon">
+     <path id="Search_icon" data-name="Search icon" d="M14.9,2.25A12.448,12.448,0,0,1,27.343,14.669a12.3,12.3,0,0,1-2.8,7.839l9.917,9.9-1.788,1.785-9.916-9.9A12.426,12.426,0,1,1,14.9,2.25Zm0,2.484a9.935,9.935,0,1,0,9.954,9.935A9.927,9.927,0,0,0,14.9,4.734Z" transform="translate(-2.46 -2.25)" fill="#fff"/>
+   </svg>
+    </a>
+</div>
+     
+ </div> <!--end of wrapper-->
+ 
+     <script src="js/script-news.js"></script>
+ </body>
+ 
+ </html>

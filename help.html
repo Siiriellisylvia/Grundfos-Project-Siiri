@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Help</title>
+    <link rel="stylesheet" href="/css/help-style.css">
+</head>
+
+<body>
+<div id="help-page">
+<!-- navigation-->
+    <nav class="main-navigation">
+        <section class="navigation-dateandtime">
+            <p id="date"></p>
+            <p id="time"></p>
+        </section>
+        
+        <div class="main-logo">
+            <a href="index.html" class="logo-link">
+                <p class="logo-grundfos">GRUNDFOS</p>
+                <p class="logo-kollegiet">KOLLEGIET</p>
+            </a>
+        </div>
+        
+        <div class="navigation-link-list">
+            <a href="news.html" class="nav-link">NEWS</a>
+            <a href="events.html" class="nav-link">EVENTS</a>
+            <a href="laundry.html" class="nav-link">LAUNDRY</a>
+            <a href="contact-form.html" class="nav-link">CONTACT FORM</a>
+            <a href="facilities.html" class="nav-link">FACILITIES</a>
+            <a href="poll.html" class="nav-link">POLL OF THE WEEK</a>
+        </div>
+        
+        <div class="navigation-qr">
+            <p class="navigation-qr-code-description">MOBILE VERSION</p>
+            <img src="images/QR code.png" class="navigation-qr-code-image" alt="QR Code">
+        </div>
+    </nav>
+
+<!-- search -->
+        <img class="help-search-button" id="help-search-button" src="images/search-icon.png" onclick="showSearchbar()">
+        <button class="search-bar" id="search-bar" onclick="showSearchbar()"><p class="search-bar-text">What are you looking for?</p><img src="images/search-icon.png" class="search-bar-icon"></button>
+
+<!-- Keyboard -->
+        <img class="help-keyboard" id="help-keyboard" src="images/keyboard.png">
+    
+<!--content-->
+        <div class="help-content" id="help-content">
+    
+<!-- heading -->
+            <h1 class="help-main-heading">HELP</h1>
+<!--help icon-->
+        <a href="help.html">
+            <img src="images/help-icon.png" 
+            alt="help-help-icon" class="help-help-icon">
+        </a>
+<!--link list-->
+        <section class="help-link-list" id="help-link-list">
+
+            <div class="help-news-content">
+                <div id="help-heading-with-arrow">
+                    <button onclick="openDescription(descriptionId = 'help-news-description', headingId = 'help-news-heading', arrowId ='news-arrow-down')" 
+                    class="help-heading" id="help-news-heading" >NEWS
+                    <i id="news-arrow-down" class="arrow-down"></i></button>
+                </div>
+                <div id="help-news-description" class="help-description">
+                In the <a href="news.html" class="help-link">News</a> section you can find short announcements about the dormitory's
+                affairs. <ul class="help-bulletpoint"><li>You can choose a category using the filters.</li></ul>
+                </div>
+            </div>
+
+            <div class="help-events-content">
+                <div id="help-heading-with-arrow">
+                    <button onclick="openDescription(descriptionId = 'help-events-description', headingId='help-events-heading', arrowId='events-arrow-down')" 
+                    class="help-heading" id="help-events-heading">EVENTS
+                    <i id="events-arrow-down" class="arrow-down"></i></button>
+                </div>
+                
+                <div id="help-events-description" class="help-description">
+                In the <a href="events.html" class="help-link">Events</a> section you can find upcoming parties and workshops. There are
+                highlighted events and calendar to give you an overview of the current and
+                approaching month.<ul class="help-bulletpoint"><li>Click the calendar to see all events</li><li>Send an event suggestion through the button on the bottom of the page</li></ul> 
+                </div>
+            </div>
+
+            <div class="help-laundry-content">
+                <div id="help-heading-with-arrow">
+                    <button onclick="openDescription(descriptionId ='help-laundry-description', headingId='help-laundry-heading', arrowId='laundry-arrow-down')"
+                    class="help-heading" id="help-laundry-heading">LAUNDRY
+                    <i id="laundry-arrow-down" class="arrow-down"></i></button>
+                </div>
+                <div id="help-laundry-description" class="help-description">
+                In the <a href="laundry.html" class="help-link">Laundry</a> section you can check the live-status of washing machines 
+                and tumblers. The line graph can help you improve your chances of encountering free washing machine!
+                <ul class="help-bulletpoint"><li>Data is updated on weekly basis based on real user statistics.</li><li>You're welcome, Tobias!</li></ul> 
+            </div>
+            </div>
+
+            <div class="help-contactform-content">
+                <div id="help-heading-with-arrow">
+                    <button onclick="openDescription('help-contact-description', 'help-contact-heading', 'contact-arrow-down')"
+                    class="help-heading" id="help-contact-heading">CONTACT FORM
+                    <i id="contact-arrow-down" class="arrow-down"></i></button>
+                </div>
+                <div id="help-contact-description" class="help-description">
+                In the <a href="contact-form.html" class="help-link">Contact form</a> section you can send a message to your Caretaker or to the
+                Resident Council.<ul class="help-bulletpoint"><li>Remember to choose the subject!</li><li>This section requires 
+                    log in using your chip or e-mail and password to your Resident Account.</li></ul> 
+            </div>
+            </div>
+
+            <div class="help-facilities-content">
+                <div id="help-heading-with-arrow">
+                    <button onclick="openDescription('help-facilities-description', 'help-facilities-heading', 'facilities-arrow-down')"
+                    class="help-heading" id="help-facilities-heading">FACILITIES
+                    <i id="facilities-arrow-down" class="arrow-down"></i></button>
+                </div>
+                <div id="help-facilities-description" class="help-description">
+                In the <a href="facilities.html" class="help-link">Facilities</a> section you can see where everything is located in the building.
+                <ul class="help-bulletpoint"><li>To highlight a facility on the building layout, simply tap the floor number.</li></ul> 
+                </div>
+            </div>
+
+            <div class="help-poll-content">
+                <div id="help-heading-with-arrow">
+                    <button onclick="openDescription('help-poll-description', 'help-poll-heading', 'poll-arrow-down')"
+                    class="help-heading" id="help-poll-heading">POLL OF THE WEEK
+                    <i id="poll-arrow-down" class="arrow-down"></i></button>
+                </div>
+                <div id="help-poll-description" class="help-description">
+                In the <a href="poll.html" class="help-link">Poll of the Week</a> section, every week you can answer one question 
+                related to tons of different, funny subjects. Let the dormitory's community know what your opinions or preferences are!
+                <ul class="help-bulletpoint"><li>Send a poll suggestion through the button on the bottom of the page</li><li>You can also see results of the last week's poll!</li></ul> 
+                </div>
+            </div>
+        </section>
+        <section class="help-contact-ct-container">
+                <h2 class="help-contact-ct-heading">Still having problems?</h2>
+                <div class="help-contact-ct-content">
+                <h3 class="help-contact-subheading">CONTACT YOUR CARETAKER</h3>
+                <p class="help-contact-text">🕻 &nbsp; &nbsp; 42446854<br>✉ &nbsp; ifixthings@grundfos.dk</p>
+                </div>
+
+        </section>
+
+    </div>
+</div>
+
+
+<script src="js/script-help.js"></script>
+</body>
+</html>
+        
+                  

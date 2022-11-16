@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Poll of The Week</title>
+    <link rel="stylesheet" href="css/poll.css" />
+  </head>
+  <body>
+
+    <div class="laundry-page">
+      <nav class="main-navigation">
+        <section class="navigation-dateandtime">
+        <p id="date"></p>
+        <p id="time"></p>
+        </section>
+    
+        <div class="main-logo">
+          <a class="logo-grundfos-link" href ="index.html"><img class="logo-grundfos" src="images/Logo.png"></a>
+        </div>
+        <div class="navigation-links">
+          <a href="news.html" class="nav-link">NEWS</a>
+          <a href="events.html" class="nav-link">EVENTS</a>
+          <a href="laundry.html" class="nav-link">LAUNDRY</a>
+          <a href="contact-form.html" class="nav-link">CONTACT FORM</a>
+          <a href="facilities.html" class="nav-link">FACILITIES</a>
+          <a href="poll.html" class="nav-link">POLL OF THE WEEK</a>
+        </div>
+    
+        <div class="navigation-qr">
+          <p class="navigation-qr-code-description">MOBILE VERSION</p>
+          <img
+            src="images/QR code.png"
+            class="navigation-qr-code-image"
+            alt="NavigationQRcode"
+          />
+        </div>
+      </nav>
+        </div>
+  
+        <div class="laundry-content">
+          <div class="laundry-top">
+            <h1 class="laundry-heading">POLL OF THE WEEK</h1>
+            <a href="#">
+              <img
+                src="images/search.svg"
+                alt="Search icon"
+                class="laundry-search-icon"
+            /></a>
+          </div>
+
+          <div> 
+            <div id="poll-box">
+              <div id="poll-box-top">
+            <div class="poll-title"> AUTUMN LOVERS</div>
+            <div class="title-line"></div></div>
+
+            <div id="poll-content">
+                <div id="poll-description">
+                <p id="poll-text">It's here - autumn! Autumn lovers have been prepared for months with blankets, candles and Copenhagen blend tea in their favourite mug. 
+<br> <br>
+                    All we're missing is a selfie with a pumpkin. <br>  Is it hot or not?
+                    </p>
+                    <div id="vote-heading"> SELFIES WITH A PUMPKIN</div>
+                    <div id="vote-buttons">
+                    <button onclick="openModal('modal')" class="poll-vote-button"> HOT</button>
+                <button onclick="openModal('modal')"class="poll-vote-button"> NOT</button>
+            </div>
+            </div>
+                    <img src="images/selfie.jpg" alt="Natalia with a pumpkin" id="selfie">
+                </div>
+
+                <!-- current poll modal box-->
+                <div id="myModal" class="modal">
+
+                  <!-- Modal content -->
+                  <div class="modal-content">
+                    <div class="modal-close"><span class="close"  onclick="modalClose('modal')">&times;</span></div>
+                    <div id="poll-title1"> THANK YOU FOR YOUR VOTE!</div>
+            <div class="title-line-modal"></div>
+
+            <div id="vote-heading-modal">CURRENT RESULTS OF THE POLL</div>
+
+            <!-- PIE CHART-->
+            <div class="graphContainer">
+              <canvas id="myChart" width="100%" height="width=100%"></canvas>
+            </div>
+          </div>
+
+                
+                </div>
+
+<!-- last week poll modal box-->
+                <div id="myModalSec" class="modalSec">
+
+                  <!-- Modal content -->
+                  <div class="modal-content">
+                    <div class="modal-close"><span class="closeSec"  onclick="modalClose('modalSec')">&times;</span></div>
+                    <div id="poll-title2"> LAST WEEK POLL RESULTS</div>
+                    <div class="title-line-modal"></div>
+
+            <div id="vote-heading-modal">DO YOU SLEEPWALK?</div>
+
+            <!-- PIE CHART-->
+            <div class="graphContainerSec">
+              <canvas id="myChartSec" width="250" height="250"></canvas>
+            </div>
+          </div>
+
+                
+                </div>
+                <div id="poll-footer">
+                    <div id="contact-RC">
+                        POLL IDEA?
+                        <a href="contact-form.html"><button id="contact-RC-button"> Contact the Residents' Council</button></a>
+                    </div>
+                   
+                    <div id="last-week-poll" onclick="openModal('modalSec')">
+                        LAST WEEK'S POLL
+                         <div id="pie-chart-icon"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 175.492 153.548">
+                            <path id="Path_35" data-name="Path 35" d="M112.682,221.1a58.55,58.55,0,1,1,0-117.1,4.994,4.994,0,0,1,4.994,4.994v48.561H166.24a4.994,4.994,0,0,1,4.994,4.994A58.614,58.614,0,0,1,112.682,221.1Zm-4.994-106.87a48.569,48.569,0,1,0,53.3,53.312H112.682a4.994,4.994,0,0,1-4.994-4.994Z" transform="matrix(0.921, 0.391, -0.391, 0.921, 36.564, -116.883)" fill="#eba10c"/>
+                            <path id="Path_36" data-name="Path 36" d="M321.124,118.618h-54.9a4.994,4.994,0,0,1-4.994-4.994v-54.9a4.994,4.994,0,0,1,4.994-4.994,59.962,59.962,0,0,1,59.894,59.894A4.994,4.994,0,0,1,321.124,118.618Zm-49.906-9.988h44.666a49.992,49.992,0,0,0-44.666-44.662Z" transform="matrix(0.921, 0.391, -0.391, 0.921, -103.707, -139.994)" fill="#aacfd3"/>
+                          </svg>
+                        </div>
+                      </div>
+                    </a>
+                </div>
+          </div>
+          <div class="bottom-page">
+            <a href="help.html"> <img src="images/help-icon.png" alt="Help Icon" id="help-icon"></a>
+          </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/chartjs-plugin-datalabels/2.1.0/chartjs-plugin-datalabels.min.js" integrity="sha512-Tfw6etYMUhL4RTki37niav99C6OHwMDB2iBT5S5piyHO+ltK2YX8Hjy9TXxhE1Gm/TmAV0uaykSpnHKFIAif/A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="js/script-poll.js"></script>
+
+  </body>
+</html>

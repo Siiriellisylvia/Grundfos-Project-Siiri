@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News</title>
+    <link rel="stylesheet" href="/css/news-styles.css">
+</head>
+
+<body>
+<div id="blockingRectangle"></div>
+
+    <div id="newsWrapper">
+        <!--header for the mobile version-->
+        <a href="index.html"><div class="mobile-logo"> 
+            <div class="mobile-name"> <h1 class="main-heading-grundfos">GRUNDFOS  </h1> <h1 class="main-heading-text">KOLLEGIET</h1> </div>
+            <div class="horizontal-line"></div></div></a>
+
+            
+        <!--main navigation-->
+            <nav class="main-navigation">
+                <section class="navigation-dateandtime">
+                <p id="date"></p>
+                <p id="time"></p>
+                </section>
+            
+                <div class="main-logo">
+                  <a class="logo-grundfos-link" href ="index.html"><img class="logo-grundfos" src="images/Logo.png"></a>
+                </div>
+                <div class="navigation-links">
+                  <a href="news.html" class="nav-link" id="activePage">NEWS</a>
+                  <a href="events.html" class="nav-link">EVENTS</a>
+                  <a href="laundry.html" class="nav-link">LAUNDRY</a>
+                  <a href="contact-form.html" class="nav-link">CONTACT FORM</a>
+                  <a href="facilities.html" class="nav-link">FACILITIES</a>
+                  <a href="poll.html" class="nav-link">POLL OF THE WEEK</a>
+                </div>
+            
+                <div class="navigation-qr">
+                  <p class="navigation-qr-code-description">MOBILE VERSION</p>
+                  <img
+                    src="images/QR code.png"
+                    class="navigation-qr-code-image"
+                    alt="NavigationQRcode"
+                  />
+                </div>
+              </nav>
+
+        <!--News Content - main-->
+        <section class="newsContent">
+            <div class="newsTop">
+                <h1 class="newsH1"><a href="news.html" id="newsLink">NEWS</a></h1>
+                <div class="outerIcons">
+                    <img class="newsSearchIcon" src="images/search.svg" alt="Search icon">
+                    <a href="help.html"><img src="images/help-icon.png" id="news-help-icon"></a>
+                </div>
+            </div>
+
+            <!--News filter options-->
+            <div id="newsBurger">
+                <a href="newsIconFilter.html">☰</a>
+            </div>
+            <ul id="newsIconsContainer">
+                <li class="newsIcon" id="maintenanceFilterButton" onclick="maintenanceColour()">
+                    <figure class="newsFigure">
+                        <img id="newsIconMaintenance" class="newsIconImage" src="/images/maintenance_icon.svg"
+                            alt="Spanner">
+                        <figcaption class="newsIconLabel">Maintenance</figcaption>
+                    </figure>
+                </li>
+
+                <li class="newsIcon" id="communityFilterButton" onclick="communityColour()">
+                    <figure>
+                        <img id="newsIconCommunity" class="newsIconImage" src="/images/community_icon.svg"
+                            alt="Group of people">
+                        <figcaption class="newsIconLabel">Community</figcaption>
+                    </figure>
+                </li>
+
+                <li class="newsIcon" id="laundryFilterButton" onclick="laundryColour()">
+                    <figure>
+                        <img id="newsIconLaundry" class="newsIconImage" src="/images/laundry_icon.svg"
+                            alt="Washing machine">
+                        <figcaption class="newsIconLabel">Laundry</figcaption>
+                    </figure>
+                </li>
+
+                <li class="newsIcon" id="outdoorFilterButton" onclick="outdoorColour()">
+                    <figure>
+                        <img id="newsIconOutdoor" class="newsIconImage" src="/images/outdoor_icon.svg" alt="Trees">
+                        <figcaption class="newsIconLabel">Outdoor areas</figcaption>
+                    </figure>
+                </li>
+
+                <li class="newsIcon" id="holidaysFilterButton" onclick="holidaysColour()">
+                    <figure>
+                        <img id="newsIconHolidays" class="newsIconImage" src="/images/holidays_icon.svg" alt="Sun">
+                        <figcaption class="newsIconLabel">Holidays</figcaption>
+                    </figure>
+                </li>
+
+                <li class="newsIcon" id="clearFilterButton">
+                    <figure>
+                        <img class="newsIconImage" src="/images/clearfilter_icon.svg" alt="Funnel with a cross">
+                        <figcaption class="newsIconLabel">Clear filter</figcaption>
+                    </figure>
+                </li>
+
+
+            </ul>
+
+            <!--dropdown filter for mobile-->
+
+            <div class="dropDown" id="headerBox">
+    <div id="mobileFlexDropFilter">
+        <button onclick="newsDrop()" class="dropbtn" id="dropClick">All categories 
+    <img src="images/arrow-down.svg" alt="down arrow" id="downArrow">
+</button>
+<a href="news.html"><img src="/images/clearfilter_icon.svg" alt="clear filter button" id="mobileClearFilterButton"></a>
+    </div>
+    <div id="myDropdown" class="dropdown-content">
+    <a href="maintenance.html">Maintenance</a>
+      <a href="#">Community</a>
+      <a href="#">Laundry</a>
+      <a href="#">Outdoor Areas</a>
+      <a href="#">Holidays</a>
+    </div> <!--end of dropdown content div-->
+</div> <!--end of dropdown div-->
+
+            <!--news articles-->
+
+            <section id="newsArticleContainer">
+
+                <article class="newsArticle communityArticle">
+                    <img class="newsArticleIcon" src="/images/community_icon.svg" alt="group of people">
+                    <div class="newsText">
+                        <div class="newsHeader">
+                            <h3 class="newsH3">Hot or not </h3>
+                            <p class="newsDate">19.10.2022</p>
+                        </div>
+                        <p class="newsDescription">Don't miss your chance to take part in this week's poll -
+                            Selfies with a Pumpkin</p>
+                    </div>
+                </article>
+
+                <article class="newsArticle holidaysArticle">
+                    <img class="newsArticleIcon" src="/images/holidays_icon.svg" alt="sun">
+                    <div class="newsText">
+                        <div class="newsHeader">
+                            <h3 class="newsH3">Week 42</h3>
+                            <p class="newsDate">17.10.2022</p>
+                        </div>
+                        <p class="newsDescription"> Due to the autumn holiday in Denmark, the caretaker is
+                            working reduced hours this week. Mon - Fri 10:00 - 12:00.</p>
+                    </div>
+                </article>
+
+                <article class="newsArticle maintenanceArticle">
+                    <img class="newsArticleIcon" src="/images/maintenance_icon.svg" alt="Spanner">
+                    <div class="newsText">
+                        <div class="newsHeader">
+                            <h3 class="newsH3">All power restored</h3>
+                            <p class="newsDate">07.10.2022</p>
+                        </div>
+                        <p class="newsDescription"> Following a power outage last night, all power has now
+                            been restored to the building</p>
+                    </div>
+                </article>
+
+                <article class="newsArticle outdoorArticle">
+                    <img class="newsArticleIcon" src="/images/outdoor_icon.svg" alt="Trees">
+                    <div class="newsText">
+                        <div class="newsHeader">
+                            <h3 class="newsH3">Rooftop terrace</h3>
+                            <p class="newsDate">07.10.2022</p>
+                        </div>
+                        <p class="newsDescription"> The door to the rooftop terrace will now be kept closed due
+                            to the colder weather. Remember your chip for access.</p>
+                    </div>
+                </article>
+
+                <article class="newsArticle laundryArticle">
+                    <img class="newsArticleIcon" src="/images/laundry_icon.svg" alt="Washing machine">
+                    <div class="newsText">
+                        <div class="newsHeader">
+                            <h3 class="newsH3">Lost property</h3>
+                            <p class="newsDate">05.10.2022</p>
+                        </div>
+                        <p class="newsDescription"> Remember to check the lost property in the laundry room.
+                            Unclaimed items will be sent to charity on 10th October.</p>
+                    </div>
+                </article>
+
+                <article class="newsArticle communityArticle">
+                    <img class="newsArticleIcon" src="/images/community_icon.svg" alt="Group of people">
+                    <div class="newsText">
+                        <div class="newsHeader">
+                            <h3 class="newsH3">Balloon Popping</h3>
+                            <p class="newsDate">05.10.2022</p>
+                        </div>
+                        <p class="newsDescription"> On 11th of October we hold our annual Balloon Popping
+                            Competition. Check Events page for more details.</p>
+                    </div>
+                </article>
+
+                <article class="newsArticle maintenanceArticle">
+                    <img class="newsArticleIcon" src="/images/maintenance_icon.svg" alt="Spanner">
+                    <div class="newsText">
+                        <div class="newsHeader">
+                            <h3 class="newsH3">Water consumption</h3>
+                            <p class="newsDate">02.10.2022</p>
+                        </div>
+                        <p class="newsDescription"> Last month we experienced high water consumption. If
+                            you have a leak in your toilet, please contact Caretaker.</p>
+                    </div>
+                </article>
+
+                <article class="newsArticle laundryArticle">
+                    <img class="newsArticleIcon" src="/images/laundry_icon.svg" alt="Washing machine">
+                    <div class="newsText">
+                        <div class="newsHeader">
+                            <h3 class="newsH3">Check your pockets</h3>
+                            <p class="newsDate">01.10.2022</p>
+                        </div>
+                        <p class="newsDescription"> We found some unwanted items inside the machines.
+                            Please make sure to check your pockets beforehand.</p>
+                    </div>
+                </article>
+
+                <article class="newsArticle outdoorArticle">
+                    <img class="newsArticleIcon" src="/images/outdoor_icon.svg" alt="Trees">
+                    <div class="newsText">
+                        <div class="newsHeader">
+                            <h3 class="newsH3">Bike parking</h3>
+                            <p class="newsDate">01.10.2022</p>
+                        </div>
+                        <p class="newsDescription"> We have placed five new bike parking spots on the west
+                            side of the building upon residents' request.</p>
+                    </div>
+                </article>
+
+
+            </section>
+            <!--end of news content section-->
+
+<!-- mobile navigation-->
+<div class="navigation-mobile">
+    <a href="help.html"> <svg id="mobileNavHelp" xmlns="http://www.w3.org/2000/svg" width="32.81" height="32.111" viewBox="0 0 32.81 32.111" class="mobile-nav-icon">
+     <path id="Help_icon" data-name="Help icon" d="M19.4,3A16.25,16.25,0,0,0,3,19.055,16.25,16.25,0,0,0,19.4,35.111a16.584,16.584,0,0,0,11.82-4.933A15.771,15.771,0,0,0,35.81,19.055,16.25,16.25,0,0,0,19.4,3Zm0,2.676A13.507,13.507,0,0,1,33.075,19.055,13.507,13.507,0,0,1,19.4,32.435a13.8,13.8,0,0,1-9.673-3.912,13.215,13.215,0,0,1-4-9.467A13.507,13.507,0,0,1,19.4,5.676Zm0,5.352a5.427,5.427,0,0,0-5.468,5.352h2.734a2.735,2.735,0,0,1,5.468,0,2.392,2.392,0,0,1-1.666,2.258l-.556.166a2.71,2.71,0,0,0-1.879,2.551v1.714h2.734V21.357l.556-.169a5.1,5.1,0,0,0,3.545-4.808A5.427,5.427,0,0,0,19.4,11.028ZM18.038,24.407v2.676h2.734V24.407Z" transform="translate(-3 -3)" fill="#fff"/>
+   </svg>
+    </a>
+    <a href="burger.html"> <svg xmlns="http://www.w3.org/2000/svg" width="38.421" height="23.644" viewBox="0 0 38.421 23.644" class="mobile-nav-icon">
+     <path id="icons8-menu" d="M3.478,7a1.478,1.478,0,1,0,0,2.956H38.943a1.478,1.478,0,1,0,0-2.956Zm0,10.344a1.478,1.478,0,1,0,0,2.956H38.943a1.478,1.478,0,1,0,0-2.956Zm0,10.344a1.478,1.478,0,1,0,0,2.956H38.943a1.478,1.478,0,1,0,0-2.956Z" transform="translate(-2 -7)" fill="#fff"/>
+   </svg>
+   
+   </a>
+    <a href="search.html"> <svg id="mobileNavSearch" xmlns="http://www.w3.org/2000/svg" width="32" height="31.939" viewBox="0 0 32 31.939" class="mobile-nav-icon">
+     <path id="Search_icon" data-name="Search icon" d="M14.9,2.25A12.448,12.448,0,0,1,27.343,14.669a12.3,12.3,0,0,1-2.8,7.839l9.917,9.9-1.788,1.785-9.916-9.9A12.426,12.426,0,1,1,14.9,2.25Zm0,2.484a9.935,9.935,0,1,0,9.954,9.935A9.927,9.927,0,0,0,14.9,4.734Z" transform="translate(-2.46 -2.25)" fill="#fff"/>
+   </svg>
+    </a>
+</div>
+
+    </div>
+    <!--end of wrapper-->
+
+    <script src="js/script-news.js"></script>
+</body>
+
+</html>

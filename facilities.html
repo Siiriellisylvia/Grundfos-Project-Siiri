@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Facilities</title>
+    <link rel="stylesheet" href="css/facilities-style.css" />
+  </head>
+  <body>
+
+    <div class="laundry-page">
+      <a href="index.html">
+        <div class="mobile-logo"> 
+        <div class="mobile-name"> <h1 class="main-heading-grundfos">GRUNDFOS  </h1> <h1 class="main-heading-text">KOLLEGIET</h1> </div>
+        <div class="horizontal-line"></div></div></a>
+      <!-- navigation section-->
+
+      <nav class="main-navigation">
+        <section class="navigation-dateandtime">
+        <p id="date"></p>
+        <p id="time"></p>
+        </section>
+    
+        <div class="main-logo">
+          <a class="logo-grundfos-link" href ="index.html"><img class="logo-grundfos" src="images/Logo.png"></a>
+        </div>
+        <div class="navigation-links">
+          <a href="news.html" class="nav-link">NEWS</a>
+          <a href="events.html" class="nav-link">EVENTS</a>
+          <a href="laundry.html" class="nav-link">LAUNDRY</a>
+          <a href="contact-form.html" class="nav-link">CONTACT FORM</a>
+          <a href="facilities.html" class="nav-link" style="font-weight:bold; font-size: 1.7vw;">FACILITIES</a>
+          <a href="poll.html" class="nav-link">POLL OF THE WEEK</a>
+        </div>
+    
+        <div class="navigation-qr">
+          <p class="navigation-qr-code-description">MOBILE VERSION</p>
+          <img
+            src="images/QR code.png"
+            class="navigation-qr-code-image"
+            alt="NavigationQRcode"
+          />
+        </div>
+      </nav>
+
+ 
+    <!--content section-->
+    <div class="laundry-content">
+      <!-- heading and search option -->
+      <div class="laundry-top">
+        <h1 class="laundry-heading">FACILITIES</h1>
+        <a href="#">
+          <img
+            src="images/search.svg"
+            alt="Search icon"
+            class="laundry-search-icon"
+        /></a>
+      </div>
+
+      <div class="facility-display">
+        <!--facility list with buttons-->
+        <div class="facility-list">
+          <div
+            class="facility-element" id="facility_1"
+            onclick="changeImage(this, 'images/rooftop.jpg')"
+          >
+            <div class="svg-container">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 82.417 60.917"
+              >
+                <path
+                  id="IMAGE_ICON"
+                  data-name="IMAGE ICON"
+                  d="M76.25,67.917H8.167A7.167,7.167,0,0,1,1,60.75V14.167A7.167,7.167,0,0,1,8.167,7H76.25a7.167,7.167,0,0,1,7.167,7.167V60.75A7.167,7.167,0,0,1,76.25,67.917Zm3.583-53.75a3.585,3.585,0,0,0-3.583-3.583H8.167a3.585,3.585,0,0,0-3.583,3.583V60.75a3.585,3.585,0,0,0,3.583,3.583H76.25a3.585,3.585,0,0,0,3.583-3.583ZM73.265,56.656,61.917,45.308l-6.484,6.484,5.973,5.973a1.75,1.75,0,0,1-2.474,2.474L33.25,34.558l-22.1,22.1a1.75,1.75,0,0,1-2.474-2.474L31.8,31.06a1.605,1.605,0,0,1,.17-.258,1.644,1.644,0,0,1,2.732.258L52.958,49.317l7.507-7.507a1.832,1.832,0,0,1,.17-.258,1.882,1.882,0,0,1,2.562,0,1.833,1.833,0,0,1,.17.258L75.739,54.182a1.75,1.75,0,1,1-2.474,2.474ZM51.167,28.5a7.167,7.167,0,1,1,7.167-7.167A7.167,7.167,0,0,1,51.167,28.5Zm0-10.75a3.583,3.583,0,1,0,3.583,3.583A3.585,3.585,0,0,0,51.167,17.75Z"
+                  transform="translate(-1 -7)"
+                  fill-rule="evenodd"
+                  stroke="black"
+                  stroke-width="2.4"
+                />
+              </svg>
+            </div>
+            <div class="align-facility">ROOFTOP TERRACE</div>
+            <button class="room-button">12.01</button>
+          </div>
+
+          <div
+            class="facility-element" id="facility_2"
+            onclick="changeImage(this,'images/common-bbq.jpg')"
+          >
+            <img
+              src="images/bbq.svg"
+              alt="Barbecue Icon"
+              class="facility-icon"
+            />
+            BARBECUE AREA <button class="room-button">11.10</button>
+          </div>
+
+          <div
+            class="facility-element" id="facility_3"
+            onclick="changeImage(this, 'images/common-bbq.jpg')"
+          >
+            <img
+              src="images/kitchen.svg"
+              alt="Common Room Icon"
+              class="facility-icon"
+            />
+            <div class="align-facility-img">COMMON ROOM </div><button class="room-button">11.03</button>
+          </div>
+
+          <div
+            class="facility-element" id="facility_4"
+            onclick="changeImage(this, 'images/printers.jpg')"
+          >
+            <div class="svg-container">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 101 101">
+                <g
+                  id="PRINTER_ICON"
+                  data-name="PRINTER ICON"
+                  transform="translate(0 0.328)"
+                >
+                  <rect
+                    id="Rectangle_148"
+                    data-name="Rectangle 148"
+                    width="101"
+                    height="101"
+                    transform="translate(0 -0.328)"
+                    fill="none"
+                  />
+                  <path
+                    id="Path_50"
+                    data-name="Path 50"
+                    d="M109.8,54.247a3.221,3.221,0,0,1-3.221-3.221V38.442H62.442V51.026a3.221,3.221,0,0,1-6.442,0v-15.8A3.221,3.221,0,0,1,59.221,32H109.8a3.221,3.221,0,0,1,3.221,3.221v15.8A3.221,3.221,0,0,1,109.8,54.247Z"
+                    transform="translate(-34.006 -19.281)"
+                  />
+                  <path
+                    id="Rectangle_149"
+                    data-name="Rectangle 149"
+                    d="M-4.779-8H45.545a3.221,3.221,0,0,1,3.221,3.221V22.195a3.221,3.221,0,0,1-3.221,3.221H-4.779A3.221,3.221,0,0,1-8,22.195V-4.779A3.221,3.221,0,0,1-4.779-8Zm47.1,6.442H-1.558V18.974H42.325Z"
+                    transform="translate(30.169 64.901)"
+                  />
+                  <path
+                    id="Path_51"
+                    data-name="Path 51"
+                    d="M102.246,116.373H88.021a3.221,3.221,0,1,1,0-6.442h11V81.543a3.434,3.434,0,0,0-3.615-3.1H30.056a3.434,3.434,0,0,0-3.615,3.1v28.389h11a3.221,3.221,0,1,1,0,6.442H23.221A3.221,3.221,0,0,1,20,113.153V81.543A9.821,9.821,0,0,1,30.056,72H95.41a9.821,9.821,0,0,1,10.056,9.543v31.61A3.221,3.221,0,0,1,102.246,116.373Z"
+                    transform="translate(-12.231 -43.476)"
+                  />
+                  <circle
+                    id="Ellipse_18"
+                    data-name="Ellipse 18"
+                    cx="5"
+                    cy="5"
+                    r="5"
+                    transform="translate(69 40.672)"
+                  />
+                </g>
+              </svg>
+            </div>
+            <div class="align-facility-img">PRINTING ROOM </div> <button class="room-button">2.12</button>
+          </div>
+
+          <div
+            class="facility-element" id="facility_5"
+            onclick="changeImage(this, 'images/laundry-bike.jpg')"
+          >
+            <img
+              src="images/laundry.svg"
+              alt="Laundry Icon"
+              class="facility-icon"
+            />
+            LAUNDRY ROOM <button class="room-button">-1.05</button>
+          </div>
+
+          <div
+            class="facility-element" id="facility_6"
+            onclick="changeImage(this,'images/laundry-bike.jpg')"
+            onclick="changeStyle()"
+          >
+            <img
+              src="images/bicycle.svg"
+              alt="Bicycle Icon"
+              class="facility-icon"
+            />
+            <div class="align-facility">BICYCLE STORAGE</div>
+            <button class="room-button">-1.03</button>
+          </div>
+        </div>
+        <!--building layout-->
+        <div class="facility-layout">
+          <div>
+            <img
+              src="images/none.JPG"
+              alt="building Layout"
+              class="building-layout"
+              id="original-layout"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="bottom-page">
+        <a href="help.html">
+          <img src="images/help-icon.png" alt="Help Icon" id="help-icon"
+        /></a>
+      </div>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure placeat vero asperiores, maiores inventore fugit et quis fuga accusamus commodi nisi sequi enim laboriosam quasi. Consectetur provident officia eaque eligendi accusamus ex, nostrum aut, dolor accusantium quibusdam velit fugit, nobis esse aliquam ipsam omnis. Ducimus nisi exercitationem assumenda? Quo corrupti delectus, porro impedit dolore enim reiciendis aperiam adipisci excepturi ipsam placeat doloribus cupiditate dolorem non. Distinctio ea totam voluptates enim ullam, impedit iste, vel laborum accusantium quibusdam dolorum harum doloremque. Quae a dolores perferendis rerum dicta sint pariatur maiores quis, sapiente beatae veritatis aperiam quos, ea repellendus necessitatibus officia repudiandae esse rem nulla molestiae excepturi temporibus! Rem aliquam deserunt iusto modi assumenda officia cupiditate corrupti non, possimus sit labore rerum inventore dolorem atque qui voluptates. Eum iusto molestiae adipisci at illo fugit earum illum tempora nisi corporis cumque magnam mollitia accusantium eaque, perspiciatis quod quo fuga! Neque inventore cum mollitia voluptas doloribus porro modi quae distinctio, deleniti totam quisquam fugit vero iure quis cupiditate libero nisi quas quo ea eligendi sunt iste. Vel, a cumque alias velit illo sapiente iure tempora! Dolorem vel enim natus! Aut, natus! Repellendus, ipsum quia eveniet non placeat enim magni debitis laudantium ea aliquid. Nam quidem commodi animi a, molestiae nulla natus aliquid. Odio, voluptatibus quam illo et deleniti sunt, libero harum quia cupiditate laboriosam possimus ullam provident neque eum. Non, cupiditate vero amet illum labore itaque quibusdam quisquam impedit a suscipit? Eius ut iure vel modi animi sint natus excepturi minima similique. Consectetur optio quas fuga atque iusto labore temporibus eaque explicabo repellendus dignissimos numquam, incidunt molestiae voluptate ab. Architecto magnam voluptate, maiores nesciunt id perferendis. Est consectetur consequatur laudantium ipsam amet molestiae excepturi facere, quod repellat provident officiis nobis deserunt dignissimos nisi! Numquam exercitationem magnam facilis distinctio quos necessitatibus consectetur inventore vel voluptatem et magni iste itaque possimus illo, iure nobis saepe eum voluptatibus! Omnis quia ad qui et necessitatibus, perspiciatis quam, debitis deserunt corporis ea quidem animi id nisi? Odit doloremque enim saepe aliquam earum. Tempore quas sed incidunt laborum blanditiis fugit! Voluptatibus asperiores culpa, suscipit quas reiciendis soluta! Odit molestiae nisi corrupti ut adipisci aliquid unde qui non porro omnis dolore iste consectetur doloremque tempora deleniti a nulla dolores, eos exercitationem animi labore facere accusantium deserunt. Ad architecto dolor autem quisquam explicabo sint doloribus beatae a mollitia sequi voluptatum aperiam commodi magni cupiditate eaque incidunt praesentium laudantium, quasi veritatis unde quibusdam dicta? Voluptate autem doloribus, error dolore ipsum beatae fuga, corrupti facilis pariatur accusamus, aut libero ea qui labore corporis amet perferendis harum! Asperiores itaque cupiditate nesciunt animi officia, maxime minima eligendi dignissimos accusamus molestiae eos laborum sit velit fugiat totam explicabo tempore pariatur placeat omnis repellendus, voluptate assumenda obcaecati! Optio soluta nobis cum quisquam ab, odio cumque cupiditate alias ducimus, illum iste? Iste illo dignissimos blanditiis eos voluptate labore deserunt nam fuga a ipsum, nobis vitae alias ratione totam molestiae voluptatem libero et vero veritatis quisquam. Numquam, totam ea consequatur dolor minima aliquam sunt quam laborum! Eaque itaque optio enim esse hic accusantium nihil, qui cumque, velit libero id accusamus, dolores corporis minus alias ipsa non quasi! Ratione similique exercitationem, eos dolorem minus fugit id dicta rerum eaque illo cumque explicabo recusandae labore neque placeat velit inventore eligendi impedit quisquam alias corporis reiciendis vitae mollitia dolores? Modi reiciendis corporis quisquam quis rem facere error, placeat ab ducimus, sunt sit quo quae, explicabo veritatis eaque. Ratione vel odio delectus quam corrupti, culpa maiores aspernatur repellendus fuga dolore saepe architecto itaque praesentium? Natus nostrum dolore tenetur error alias harum ratione? Exercitationem unde quasi minus eveniet rem voluptatibus, eaque laboriosam repudiandae alias distinctio qui, in natus fugiat dolorem est nam doloremque inventore. Numquam facere commodi nulla rem cumque veniam, nisi suscipit ipsam adipisci ad eveniet enim praesentium accusamus nostrum nam delectus maiores. Alias mollitia dignissimos commodi eligendi corporis odit excepturi corrupti quaerat? Quis optio quaerat nostrum vel enim totam, adipisci facere numquam dolorem, odit repudiandae quod id rerum magnam autem, aspernatur et tenetur? Perspiciatis eos dignissimos sequi assumenda ratione excepturi illum atque sint dolorem iusto at ad totam delectus debitis iste eveniet praesentium dolores consequatur provident harum ducimus corporis, maxime eius. Ipsam dolores maiores voluptas deleniti maxime eaque corporis placeat, repellendus quisquam, asperiores ut deserunt vel eum consectetur consequatur unde dolorum tenetur sunt cupiditate excepturi incidunt dignissimos repellat! Sunt laborum sed, ut soluta dolorum explicabo aut maxime dignissimos non illum voluptatum earum tempore accusantium ducimus adipisci reprehenderit ea qui cupiditate consequuntur ullam nam delectus nihil minus! Ducimus labore fugit, repudiandae consequatur dolores corrupti, veritatis accusamus nulla saepe, porro eligendi vel consequuntur deleniti voluptas laborum alias exercitationem error at! Rem, consequuntur consectetur? Suscipit beatae perferendis error, repudiandae magnam minima sapiente voluptates dolores nostrum sunt ab ipsum! Nulla soluta praesentium dolores? Tenetur enim beatae laborum molestiae voluptatibus, dolores magnam molestias quibusdam voluptas eum, qui harum quasi commodi. Eum quod atque quae rerum? Ad, sunt. Culpa assumenda, maiores a reprehenderit quidem facere ipsam obcaecati dolor error laboriosam commodi adipisci incidunt nesciunt tempora, tempore eaque deleniti ducimus ad nam dolores. Quia omnis ipsum iste voluptatem error corporis quod voluptatibus excepturi, perspiciatis atque, nobis molestiae dolores perferendis autem minus possimus exercitationem quas distinctio veritatis? Nisi laborum, corrupti non tempore, molestias, blanditiis ut illum repellendus quos delectus dicta distinctio dolore! Voluptates illo molestias nesciunt, itaque alias excepturi quod! Dolores, praesentium eligendi hic esse ullam ratione soluta architecto nisi. Cum repudiandae odio accusamus sunt excepturi recusandae minus perspiciatis nobis dignissimos, saepe, in vero totam porro ullam dolorem dolorum odit ab non et. Beatae illum tempore sint eius recusandae explicabo tenetur corporis, provident odit rem repudiandae, minus numquam. Dignissimos, natus assumenda alias laborum numquam mollitia consequatur repellat, maxime vero, voluptate libero magnam! A placeat quam, labore ea quaerat debitis inventore cum dolore fuga, incidunt iste accusamus ipsam nihil quas laboriosam quasi facere vitae aperiam! Dignissimos vitae, vel eligendi magnam atque repudiandae doloribus id alias magni non expedita ipsam, repellendus eius maiores! Odio neque quas vitae doloremque saepe illo eum repudiandae animi ea! Sit facere, quo possimus, placeat amet ipsam pariatur voluptatem eum qui ullam nemo debitis non quae cum? Architecto, distinctio!</p>
+<!-- mobile navigation-->
+          <div class="navigation-mobile">
+           <a href="help.html"> <svg xmlns="http://www.w3.org/2000/svg" width="32.81" height="32.111" viewBox="0 0 32.81 32.111" class="mobile-nav-icon">
+            <path id="Help_icon" data-name="Help icon" d="M19.4,3A16.25,16.25,0,0,0,3,19.055,16.25,16.25,0,0,0,19.4,35.111a16.584,16.584,0,0,0,11.82-4.933A15.771,15.771,0,0,0,35.81,19.055,16.25,16.25,0,0,0,19.4,3Zm0,2.676A13.507,13.507,0,0,1,33.075,19.055,13.507,13.507,0,0,1,19.4,32.435a13.8,13.8,0,0,1-9.673-3.912,13.215,13.215,0,0,1-4-9.467A13.507,13.507,0,0,1,19.4,5.676Zm0,5.352a5.427,5.427,0,0,0-5.468,5.352h2.734a2.735,2.735,0,0,1,5.468,0,2.392,2.392,0,0,1-1.666,2.258l-.556.166a2.71,2.71,0,0,0-1.879,2.551v1.714h2.734V21.357l.556-.169a5.1,5.1,0,0,0,3.545-4.808A5.427,5.427,0,0,0,19.4,11.028ZM18.038,24.407v2.676h2.734V24.407Z" transform="translate(-3 -3)" fill="#fff"/>
+          </svg>
+           </a>
+           <a href="burger.html"> <svg xmlns="http://www.w3.org/2000/svg" width="38.421" height="23.644" viewBox="0 0 38.421 23.644" class="mobile-nav-icon">
+            <path id="icons8-menu" d="M3.478,7a1.478,1.478,0,1,0,0,2.956H38.943a1.478,1.478,0,1,0,0-2.956Zm0,10.344a1.478,1.478,0,1,0,0,2.956H38.943a1.478,1.478,0,1,0,0-2.956Zm0,10.344a1.478,1.478,0,1,0,0,2.956H38.943a1.478,1.478,0,1,0,0-2.956Z" transform="translate(-2 -7)" fill="#fff"/>
+          </svg>
+          
+          </a>
+           <a href="search.html"> <svg xmlns="http://www.w3.org/2000/svg" width="32" height="31.939" viewBox="0 0 32 31.939" class="mobile-nav-icon">
+            <path id="Search_icon" data-name="Search icon" d="M14.9,2.25A12.448,12.448,0,0,1,27.343,14.669a12.3,12.3,0,0,1-2.8,7.839l9.917,9.9-1.788,1.785-9.916-9.9A12.426,12.426,0,1,1,14.9,2.25Zm0,2.484a9.935,9.935,0,1,0,9.954,9.935A9.927,9.927,0,0,0,14.9,4.734Z" transform="translate(-2.46 -2.25)" fill="#fff"/>
+          </svg>
+           </a>
+       </div>
+    </div>
+
+    <script src="js/script-facilities.js"></script>
+  </body>
+</html>

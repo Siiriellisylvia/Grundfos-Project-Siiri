@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+    <link rel="stylesheet" href="css/events-style.css">
+</head>
+
+<body>
+
+  <div id="eventsWrapper">
+
+    <nav class="main-navigation">
+      <section class="navigation-dateandtime">
+      <p id="date"></p>
+      <p id="time"></p>
+      </section>
+  
+      <div class="main-logo">
+        <a class="logo-grundfos-link" href ="index.html"><img class="logo-grundfos" src="images/Logo.png"></a>
+      </div>
+      <div class="navigation-links">
+        <a href="news.html" class="nav-link">NEWS</a>
+        <a href="events.html" class="nav-link" id="activePage">EVENTS</a>
+        <a href="laundry.html" class="nav-link">LAUNDRY</a>
+        <a href="contact-form.html" class="nav-link">CONTACT FORM</a>
+        <a href="facilities.html" class="nav-link">FACILITIES</a>
+        <a href="poll.html" class="nav-link">POLL OF THE WEEK</a>
+      </div>
+  
+      <div class="navigation-qr">
+        <p class="navigation-qr-code-description">MOBILE VERSION</p>
+        <img
+          src="images/QR code.png"
+          class="navigation-qr-code-image"
+          alt="NavigationQRcode"
+        />
+      </div>
+    </nav>
+
+    <section class="eventsContent">
+      <!--events top-->
+      <div class="eventsTop">
+        <h1 id="eventsH1"><a href="events.html" id="eventsLink">EVENTS</a></h1>
+          <img class="eventsSearchIcon" src="images/search.svg" alt="Search icon">
+        </div>
+
+ 
+        <!--events main-->
+    <div class="eventsInfo">
+        <!--1.upcoming events-->
+              <div class="eventsUpcoming">
+             <h2 class="eventsH2">UPCOMING EVENTS</h2>
+
+               <section class="eventListings">
+
+                 <article class="eventListing" id="eventListing1"/*onclick="myPopUp1()"*/>
+                    <img class="eventListingImage" src="/images/Confetti image.svg" alt="Confetti falling on party">
+                    <div class="eventDetails">
+                        <p class="eventDate">28.10.2022</p>
+                        <h3 class="eventH3">CONFETTI RAIN</h3>
+                        <button class="eventsReadMore" /*onclick="myPopUp1()*/">
+                        Read more
+                        </button>
+                    </div>
+                 </article>
+
+                <article class="eventListing" id="eventListing2"/*onclick="myPopUp2()"*/>
+                  <img class="eventListingImage" src="/images/Ninja Image.svg" alt="Group of people in black clothing wearing ninja masks">
+                  <div class="eventDetails">
+                      <p class="eventDate">02.12.2022</p>
+                      <h3 class="eventH3">NINJA NIGHT</h3>
+                      <button class="eventsReadMore" /*onclick="myPopUp2()"*/>
+                      Read more
+                      </button>
+                  </div>
+                </article>
+
+                <article class="eventListing" id="eventListing3"/*onclick="myPopUp3()"*/>
+                 <img class="eventListingImage" src="/images/Balloon Image.svg" alt="3 balloons">
+                 <div class="eventDetails">
+                      <p class="eventDate">02.12.2022</p>
+                      <h3 class="eventH3">BALLOON POPPING</h3>
+                      <button class="eventsReadMore" /*onclick="myPopUp3()"*/>
+                      Read more
+                      </button>
+                 </div>
+                </article>
+ 
+          </div> <!--end of upcoming events-->
+
+          
+
+    <!--Calendar-->
+          <div class="tg-wrap" id="wholeCalendarSection">
+              <h2 class="eventsH2">CALENDAR</h2>
+             <table class="tg" onclick="myCalendarPopUp()">
+              <thead>
+                <tr class="eventCalendarHeader">
+                 <th class="tg-tvsr" colspan="7" id="calendarHeaderFlex">
+                  <span> <img src="images/left_arrow_real.svg" class="eventsSmallCalendarArrow" id="eventsArrowLeft"></span>
+                  <span style="color:#000">October 2022</span>
+                  <span> <img src="images/right_arrow.svg" class="eventsSmallCalendarArrow" id="eventsArrowRight"></span>
+                </th>
+               </tr>
+             </thead>
+             <tbody>
+                <tr>
+                  <td class="tg-l3ty">Mo</td>
+                 <td class="tg-l3ty">Tu</td>
+                 <td class="tg-l3ty">We</td>
+                 <td class="tg-l3ty">Th</td>
+                 <td class="tg-l3ty">Fr</td>
+                 <td class="tg-l3ty">Sa</td>
+                 <td class="tg-l3ty">Su</td>
+               </tr>
+                <tr>
+                  <td class="tg-djcx">26</td>
+                 <td class="tg-djcx">27</td>
+                  <td class="tg-djcx">28</td>
+                 <td class="tg-djcx">29</td>
+                 <td class="tg-djcx">30</td>
+                  <td class="tg-adty">1</td>
+                  <td class="tg-adty">2</td>
+                </tr>
+               <tr>
+                 <td class="tg-adty">3</td>
+                  <td class="tg-adty">4</td>
+                  <td class="tg-adty">5</td>
+                  <td class="tg-adty">6</td>
+                  <td class="tg-adty">7</td>
+                  <td class="tg-adty">8</td>
+                  <td class="tg-adty">9</td>
+                </tr>
+                <tr>
+                  <td class="tg-adty">10</td>
+                  <td class="tg-adty">
+                    <div class="eventCircle">
+                      <span class="eventActiveDate">11</span>
+
+                    </div>
+                  </td>
+                  <td class="tg-adty">12</td>
+                  <td class="tg-adty">13</td>
+                  <td class="tg-adty">14</td>
+                  <td class="tg-adty">15</td>
+                  <td class="tg-adty">16</td>
+                </tr>
+                <tr>
+                  <td class="tg-adty">17</td>
+                  <td class="tg-adty">18</td>
+                  <td class="tg-vnm0">19</td>
+                  <td class="tg-adty">20</td>
+                  <td class="tg-adty">21</td>
+                  <td class="tg-adty">22</td>
+                  <td class="tg-adty">23</td>
+                </tr>
+                <tr>
+                  <td class="tg-adty">24</td>
+                  <td class="tg-adty">25</td>
+                  <td class="tg-adty">26</td>
+                  <td class="tg-adty">27</td>
+                  <td class="tg-adty">
+                    <div class="eventCircle">
+                      <span class="eventActiveDate">28</span>
+
+                    </div>
+                  <td class="tg-adty">29</td>
+                  <td class="tg-adty">30</td>
+                </tr>
+                <tr>
+                  <td class="tg-adty">31</td>
+                  <td class="tg-djcx">1</td>
+                  <td class="tg-djcx">2</td>
+                  <td class="tg-djcx">3</td>
+                  <td class="tg-djcx">4</td>
+                  <td class="tg-djcx">5</td>
+                  <td class="tg-djcx">6</td>
+               </tr>
+            </tbody>
+             </table>
+    
+              <section class="eventIdea">
+                 <p class="eventP"> EVENT IDEA?</p>
+                 <a href="contact-form.html">
+                    <button id="eventIdeaButton">
+                     Contact the Residents' Council
+                     </button>
+                </a>
+
+                </section> 
+                      
+          </div>
+          
+        </div> <!--end of events Wrapper-->
+          <div class="bottom-page">
+            <a href="help.html">
+              <img src="images/help-icon.png" alt="Help Icon" id="help-icon"></a>
+          </div>    
+          
+      </section> <!--end of events content section-->
+      
+   
+
+
+
+<!--modal1-->
+
+<div id="myModal" class="modal">
+  <div class="modal-content">
+    <section class="eventPopUpTop">
+      <img src="/images/Confetti image popup.svg" alt="Confetti falling on a party" class="eventPopUpImage">
+
+      <div class="eventPopUpHeader">
+        <span class="close">&times;</span>
+           <p class="popupP dateHeader">28.10.2022</p>
+          <h1 class="popupH1">CONFETTI RAIN</h1>
+      </div>
+  </section>
+
+  <section class="eventPopUpDescription">
+      <h2 class="eventPopUpDescriptionIndent popupH2">Party in style!</h2>
+      <p class="eventPopUpDescriptionIndent popupP"> 
+          Dress up and be seen at the Student House event of the month.</p><br>
+
+      <p class="eventPopUpDescriptionIndent popupDetailsText popupP" > Time: 21:00 <br>
+          Place: Studenterhus Aarhus, Nordre Ringgade 3, 8000 Aarhus</p>    
+  </section>
+  </div>
+</div>
+
+
+<!--modal2-->
+
+  <div id="myModal2" class="modal">
+  <div class="modal-content">
+    <section class="eventPopUpTop">
+      <img src="/images/Ninja Image Popup.svg" alt="Group of people in black clothing with ninga masks" class="eventPopUpImage">
+
+      <div class="eventPopUpHeader">
+        <span class="close">&times;</span>
+          <p class="popupP dateHeader">02.12.2022</p>
+          <h1 class="popupH1">NINJA NIGHT</h1>
+      </div>
+  </section>
+
+  <section class="eventPopUpDescription">
+      <h2 class="eventPopUpDescriptionIndent popupH2">Ninja Warriors</h2>
+      <p class="eventPopUpDescriptionIndent popupP"> Aarhus Theatre Company invites you to a performance of 
+          highlights from their upcoming show "Ninja Warriors" right
+          here at Grundfos Kollegiet. </p>
+
+      <p class="eventPopUpDescriptionIndent popupDetailsText popupP"> Time: 19:00 <br>
+          Place: Common Room</p>    
+  </section>
+  </div>
+</div>
+
+
+<!--modal3-->
+
+<div id="myModal3" class="modal">
+  <div class="modal-content">
+    <section class="eventPopUpTop">
+      <img src="/images/balloon image.jpg" alt="Three balloons" class="eventPopUpImage">
+      
+      <div class="eventPopUpHeader">
+        <span class="close">&times;</span>
+          <p class="popupP dateHeader">02.12.2022</p>
+          <h1 class="popupH1">BALLOON POPPING</h1>
+      </div>
+  </section>
+
+  <section class="eventPopUpDescription">
+      <h2 class="eventPopUpDescriptionIndent popupH2">Get to know your neighbours!</h2>
+      <p class="eventPopUpDescriptionIndent popupP"> Take part in the annual 
+          Grundfos Kollegiet Balloon Popping competition.<br>
+          Pins provided, everyone welcome.</p>
+
+      <p class="eventPopUpDescriptionIndent popupDetailsText popupP"> Time: 19:00 <br>
+          Place: Common Room</p>    
+  </section>
+  </div>
+</div>
+
+    <script src="js/script-events.js"></script>
+</body>
+
+</html>
